@@ -2925,12 +2925,13 @@
             "name": "ISPConfig",
             "platform": "linux",
             "ports": [
-                "20-21:20-21",
-                "80:80",
-                "443:443",
-                "8080:8080",
-                "53:53",
-                "2222:22"
+                "20:20/tcp",
+                "21:21/tcp",
+                "80:80/tcp",
+                "443:443/tcp",
+                "8080:8080/tcp",
+                "53:53/tcp",
+                "2222:22/tcp"
             ],
             "restart_policy": "unless-stopped",
             "title": "ISPConfig",
