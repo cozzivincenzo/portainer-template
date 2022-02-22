@@ -6352,12 +6352,53 @@
                 "Altro"
             ],
             "description": "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
+            "env": [{
+                    "default": "",
+                    "label": "FIREBASE_APIKEY",
+                    "name": "FIREBASE_APIKEY"
+                },
+                {
+                    "default": "",
+                    "label": "FIREBASE_APPID",
+                    "name": "FIREBASE_APPID"
+                },
+                {
+                    "default": "",
+                    "label": "FIREBASE_AUTHDOMAIN",
+                    "name": "FIREBASE_AUTHDOMAIN"
+                },
+                {
+                    "default": "",
+                    "label": "FIREBASE_DATABASEURL",
+                    "name": "FIREBASE_DATABASEURL"
+                },
+                {
+                    "default": "",
+                    "label": "FIREBASE_MEASUREMENTID",
+                    "name": "FIREBASE_MEASUREMENTID"
+                },
+                {
+                    "default": "",
+                    "label": "FIREBASE_MESSAGINGSENDERID",
+                    "name": "FIREBASE_MESSAGINGSENDERID"
+                },
+                {
+                    "default": "",
+                    "label": "FIREBASE_PROJECTID",
+                    "name": "FIREBASE_PROJECTID"
+                },
+                {
+                    "default": "",
+                    "label": "FIREBASE_STORAGEBUCKET",
+                    "name": "FIREBASE_STORAGEBUCKET"
+                }
+            ],
             "image": "amruthpillai/reactive-resume:latest",
             "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/reactiveresume.png",
             "name": "reactive-resume",
             "platform": "linux",
             "ports": [
-                "80/tcp"
+                "80:80/tcp"
             ],
             "restart_policy": "unless-stopped",
             "title": "Reactive-Resume",
@@ -6365,7 +6406,7 @@
             "volumes": [{
                 "bind": "/portainer/Files/AppData/Config/ReactiveResume",
                 "container": "/usr/src/app"
-            }]
+            }] 
         },
         {
             "categories": [
