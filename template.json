@@ -2916,6 +2916,29 @@
         },
         {
             "categories": [
+                "Website Management",
+                "Management"
+            ],
+            "description": "ISPConfig is an Open source, BSD-licensed, hosting control panel for Linux, designed to manage Apache, BIND, FTP, and databases, supporting many Linux distributions.",
+            "image": "lspg/ispconfig",
+            "logo": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flvpshosting.com%2Fmanaged-ispconfig3-vps-hosting.html&psig=AOvVaw2FBC_9-dHCk0xVURwKizNd&ust=1645637967162000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMjc6KXtk_YCFQAAAAAdAAAAABAZ",
+            "name": "ISPConfig",
+            "platform": "linux",
+            "ports": [
+                "20:20",
+                "21:21",
+                "80:80",
+                "443:443",
+                "8080:8080",
+                "53:53",
+                "2222:22"
+            ],
+            "restart_policy": "unless-stopped",
+            "title": "ISPConfig",
+            "type": 1
+        },
+        {
+            "categories": [
                 "Torrent"
             ],
             "description": "Jackett works as a proxy server: it translates queries from apps (Sonarr, SickRage, CouchPotato, Mylar, etc) into tracker-site-specific http queries, parses the html response, then sends results back to the requesting software. This allows for getting recent uploads (like RSS) and performing searches. Jackett is a single repository of maintained indexer scraping & translation logic - removing the burden from other apps.",
@@ -5663,7 +5686,8 @@
         },
         {
             "categories": [
-                "CMS"
+                "Website Management",
+                "Management"
             ],
             "description": "WebOps platform and hosting control panel",
             "image": "plesk/plesk:latest",
